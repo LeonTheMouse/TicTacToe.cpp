@@ -93,10 +93,11 @@ void TicTacToe::Play() {
 			isPlaying = false;
 			continue;
 		}
+		PrintGrid();	
 		PlayAdvancedComputer();
 		CatsGame++;
-		PrintGrid();
 		cout << endl;
+		PrintGrid();
 		if (CheckForWinner() == 'O') {
 			string inputLoss;
 			PrintGrid();
